@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var player: AVAudioPlayer?
     @IBAction func keyPressed(_ sender: UIButton) {
         print("Key Pressed")
+        print("Start")
         let buttonPressed: String? = sender.currentTitle
         
         if let note = buttonPressed{
@@ -20,7 +21,13 @@ class ViewController: UIViewController {
         }
         else{
             print("Something went wrong")
-        }        
+        }
+        sender.alpha = 0.5
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){
+            sender.alpha = 1
+            print("Stop")
+        }
     }
     
     

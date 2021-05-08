@@ -1,6 +1,6 @@
 # Xylophone
 
-## Goals<br>
+## Goals
 a)Figure out how to play sound<br>
 b)Swift functions<br>
 c)Linking multiple elements in one IBAction<br>

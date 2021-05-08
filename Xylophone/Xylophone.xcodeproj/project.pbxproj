@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0540F6C2646A23F002BE62D /* C2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A0540F6B2646A23F002BE62D /* C2.wav */; };
 		AD937BF622C61DBB002E2D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD937BF522C61DBB002E2D88 /* AppDelegate.swift */; };
 		AD937BF822C61DBB002E2D88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD937BF722C61DBB002E2D88 /* SceneDelegate.swift */; };
 		AD937BFA22C61DBB002E2D88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD937BF922C61DBB002E2D88 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0540F6B2646A23F002BE62D /* C2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C2.wav; sourceTree = "<group>"; };
 		AD937BF222C61DBB002E2D88 /* Xylophone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xylophone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD937BF522C61DBB002E2D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD937BF722C61DBB002E2D88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				ADE587EE22CB513C007F0F9A /* C.wav */,
 				ADE587F222CB513D007F0F9A /* D.wav */,
 				ADE587EF22CB513D007F0F9A /* E.wav */,
+				A0540F6B2646A23F002BE62D /* C2.wav */,
 				ADE587F022CB513D007F0F9A /* F.wav */,
 				ADE587ED22CB513C007F0F9A /* G.wav */,
 				ADE587EC22CB513C007F0F9A /* A.wav */,
@@ -164,6 +167,7 @@
 				ADE587E922CB4D36007F0F9A /* README.md in Resources */,
 				ADE587F922CB513D007F0F9A /* D.wav in Resources */,
 				ADE587F522CB513D007F0F9A /* C.wav in Resources */,
+				A0540F6C2646A23F002BE62D /* C2.wav in Resources */,
 				ADE587F822CB513D007F0F9A /* B.wav in Resources */,
 				ADE587F322CB513D007F0F9A /* A.wav in Resources */,
 				ADE587F622CB513D007F0F9A /* E.wav in Resources */,
