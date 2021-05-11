@@ -82,6 +82,8 @@ struct QuizBrain{
     
     mutating func restoreQuiz(){
         self.quizTemp = quiz
+        self.q_no = 0
+        self.questionsDone = []
     }
     
     func getScore() -> Int{

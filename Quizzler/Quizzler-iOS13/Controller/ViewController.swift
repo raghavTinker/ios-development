@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var progressBar: UIProgressView!
     
+    @IBOutlet weak var resetButtonProp: UIButton!
     var quizBrain = QuizBrain()
     
     override func viewDidLoad() {
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         newQuestion()
         progressBar.progress = 0
+        resetButtonProp.isEnabled = false
     }
     
     
@@ -52,6 +54,16 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func resetPressed(_ sender: UIButton) {
+        //Reset match
+        resetButtonProp.isEnabled = false
+        resetButtonProp.setBackgroundImage(nil, for: .normal)
+        resetButtonProp.setTitle("", for: .normal)
+        quizBrain.restoreQuiz()
+        trueButton.isEnabled = true
+        falseButton.isEnabled = true
+        newQuestion()
+    }
     @objc func newQuestion(){
         //Button cleanup
         trueButton.backgroundColor = UIColor.clear
@@ -69,6 +81,9 @@ class ViewController: UIViewController {
             questionText.text = "Questions Over"
             trueButton.isEnabled = false
             falseButton.isEnabled = false
+            resetButtonProp.setBackgroundImage(#imageLiteral(resourceName: "Rectangle"), for: .normal)
+            resetButtonProp.isEnabled = true
+            resetButtonProp.setTitle("Reset", for: .normal)
         }
     }
     
