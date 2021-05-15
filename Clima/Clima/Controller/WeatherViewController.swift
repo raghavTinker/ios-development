@@ -8,16 +8,19 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController, UITextFieldDelegate {
+class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManagerDelegate {
 
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var searchTextField: UITextField!
     
+    var weatherManager: WeatherManager = WeatherManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchTextField.delegate = self //the text field should report to the view controller
+        weatherManager.delegate = self
         //Tells the view controller when the person starts typing or stops typing
     }
     
@@ -50,7 +53,32 @@ class WeatherViewController: UIViewController, UITextFieldDelegate {
         }
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
+        if let city = searchTextField.text{
+            weatherManager.fetchWeather(cityName: removeSpace(cityName: city))
+        }
         searchTextField.text = ""
+    }
+    
+    func removeSpace(cityName: String) -> String{
+        return cityName.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
+    }
+    
+    func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel){
+        //cityLabel.text = weather.cityName This wont work
+        //As the networking activity is in the background so we have to use the completion handler for updating ui elements
+        DispatchQueue.main.async{
+            self.temperatureLabel.text = weather.temperatureString
+            self.cityLabel.text = weather.cityName
+            self.conditionImageView.image = UIImage(systemName: weather.conditionName)
+        }
+        
+    }
+    
+    func didFailWithError(error: Error) {
+        print(error)
     }
 }
 
+// API Key = <SOMETHING SECRET>
+
+// Url = api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
