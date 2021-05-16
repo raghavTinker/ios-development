@@ -24,7 +24,7 @@ class WeatherViewController: UIViewController{
         locationManager.delegate = self
         searchTextField.delegate = self //the text field should report to the view controller
         weatherManager.delegate = self //Tells the view controller when the person starts typing or stops typing
-        
+        self.hideKeyboardWhenTappedAround()
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
         //locationManager.startUpdatingLocation() for continuous tracking for a maps app or a running app
@@ -67,7 +67,7 @@ extension WeatherViewController: UITextFieldDelegate{
         }
         else{
             searchTextField.placeholder = "Type something"
-            return false
+            return true
         }
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
@@ -108,6 +108,19 @@ extension WeatherViewController: WeatherManagerDelegate{
     
     func didFailWithError(error: Error) {
         print(error)
+    }
+}
+
+//MARK: - dismiss keyboard anywhere
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
 
