@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation //Location detection through GPS etc.
 
 class WeatherViewController: UIViewController{
 
@@ -16,12 +17,35 @@ class WeatherViewController: UIViewController{
     @IBOutlet weak var searchTextField: UITextField!
     
     var weatherManager: WeatherManager = WeatherManager()
+    let locationManager: CLLocationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationManager.delegate = self
         searchTextField.delegate = self //the text field should report to the view controller
-        weatherManager.delegate = self
-        //Tells the view controller when the person starts typing or stops typing
+        weatherManager.delegate = self //Tells the view controller when the person starts typing or stops typing
+        
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+        //locationManager.startUpdatingLocation() for continuous tracking for a maps app or a running app
+    }
+    
+    @IBAction func refreshLocation(_ sender: Any) {
+        locationManager.requestLocation()
+    }
+}
+
+//MARK: - CLLocationManagerDelegate
+extension WeatherViewController: CLLocationManagerDelegate{
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last{
+            locationManager.stopUpdatingLocation() //so that the manager stops So explicit call will update the location
+            weatherManager.fetchWeather(lat: location.coordinate.latitude, lon: location.coordinate.longitude)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error!")
     }
 }
 

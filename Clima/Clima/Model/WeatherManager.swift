@@ -17,6 +17,8 @@ Networking
  d)start a task
 */
 import Foundation
+import CoreLocation
+
 
 protocol WeatherManagerDelegate{
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel)
@@ -28,6 +30,12 @@ struct WeatherManager{
     
     func fetchWeather(cityName: String){
         let urlString = "\(weatherURL)&q=\(cityName)"
+        print(urlString)
+        performRequest(urlString: urlString)
+    }
+    
+    func fetchWeather(lat: CLLocationDegrees, lon: CLLocationDegrees){
+        let urlString = "\(weatherURL)&lat=\(lat)&lon=\(lon)"
         print(urlString)
         performRequest(urlString: urlString)
     }
