@@ -5,6 +5,9 @@
 //  Created by Raghav Sharma on 15/05/21.
 //  Copyright © 2021 App Brewery. All rights reserved.
 //
+// API Key = <SOMETHING SECRET>
+
+// Url = api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
 /*
 Networking

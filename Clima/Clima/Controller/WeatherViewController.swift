@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManagerDelegate {
+class WeatherViewController: UIViewController{
 
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
@@ -23,18 +23,12 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
         weatherManager.delegate = self
         //Tells the view controller when the person starts typing or stops typing
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print(searchTextField.text!)
-        searchTextField.endEditing(true)
-        return true
-    }
+}
 
-    @IBAction func searchPressed(_ sender: UIButton) {
-        searchTextField.endEditing(true)
-        print(searchTextField.text!)
-    }
-    
+
+
+//MARK: - UITextFieldDelegate
+extension WeatherViewController: UITextFieldDelegate{
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         //In all delegate members you can change the properties of the searchTextField as textField
         /*
@@ -59,10 +53,25 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
         searchTextField.text = ""
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print(searchTextField.text!)
+        searchTextField.endEditing(true)
+        return true
+    }
+    
+    @IBAction func searchPressed(_ sender: UIButton) {
+        searchTextField.endEditing(true)
+        print(searchTextField.text!)
+    }
     func removeSpace(cityName: String) -> String{
         return cityName.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
     }
-    
+
+}
+
+
+//MARK: - WeatherManagerDelegate
+extension WeatherViewController: WeatherManagerDelegate{
     func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel){
         //cityLabel.text = weather.cityName This wont work
         //As the networking activity is in the background so we have to use the completion handler for updating ui elements
@@ -71,7 +80,6 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
             self.cityLabel.text = weather.cityName
             self.conditionImageView.image = UIImage(systemName: weather.conditionName)
         }
-        
     }
     
     func didFailWithError(error: Error) {
@@ -79,6 +87,3 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
     }
 }
 
-// API Key = <SOMETHING SECRET>
-
-// Url = api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
