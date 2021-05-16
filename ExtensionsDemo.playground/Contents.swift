@@ -10,7 +10,7 @@ extension Double{
         return n
     }
 }
-let myDouble: Double = 3.14
+let myDouble: Double = 3.14343
 
 myDouble.round(to: 2)
 let myRoundedDouble: String = String(format: "%.1f", myDouble)
