@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A08847E626B173630099078A /* MiCard_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08847E526B173630099078A /* MiCard_SwiftUIApp.swift */; };
+		A08847E826B173630099078A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08847E726B173630099078A /* ContentView.swift */; };
+		A08847EA26B173640099078A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08847E926B173640099078A /* Assets.xcassets */; };
+		A08847ED26B173640099078A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08847EC26B173640099078A /* Preview Assets.xcassets */; };
+		A08847F826B173650099078A /* MiCard_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08847F726B173650099078A /* MiCard_SwiftUITests.swift */; };
+		A088480326B173650099078A /* MiCard_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088480226B173650099078A /* MiCard_SwiftUIUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A08847F426B173640099078A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08847DA26B173630099078A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A08847E126B173630099078A;
+			remoteInfo = "MiCard SwiftUI";
+		};
+		A08847FF26B173650099078A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A08847DA26B173630099078A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A08847E126B173630099078A;
+			remoteInfo = "MiCard SwiftUI";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A08847E226B173630099078A /* MiCard SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiCard SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A08847E526B173630099078A /* MiCard_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiCard_SwiftUIApp.swift; sourceTree = "<group>"; };
+		A08847E726B173630099078A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A08847E926B173640099078A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A08847EC26B173640099078A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A08847EE26B173640099078A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A08847F326B173640099078A /* MiCard SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MiCard SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A08847F726B173650099078A /* MiCard_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiCard_SwiftUITests.swift; sourceTree = "<group>"; };
+		A08847F926B173650099078A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A08847FE26B173650099078A /* MiCard SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MiCard SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A088480226B173650099078A /* MiCard_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiCard_SwiftUIUITests.swift; sourceTree = "<group>"; };
+		A088480426B173650099078A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A088481126B174FD0099078A /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		A088481226B1768F0099078A /* ComicNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ComicNeue-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A08847DF26B173630099078A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08847F026B173640099078A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08847FB26B173650099078A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A08847D926B173630099078A = {
+			isa = PBXGroup;
+			children = (
+				A08847E426B173630099078A /* MiCard SwiftUI */,
+				A08847F626B173650099078A /* MiCard SwiftUITests */,
+				A088480126B173650099078A /* MiCard SwiftUIUITests */,
+				A08847E326B173630099078A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A08847E326B173630099078A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A08847E226B173630099078A /* MiCard SwiftUI.app */,
+				A08847F326B173640099078A /* MiCard SwiftUITests.xctest */,
+				A08847FE26B173650099078A /* MiCard SwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A08847E426B173630099078A /* MiCard SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				A088481026B174DC0099078A /* fonts */,
+				A08847E526B173630099078A /* MiCard_SwiftUIApp.swift */,
+				A08847E726B173630099078A /* ContentView.swift */,
+				A08847E926B173640099078A /* Assets.xcassets */,
+				A08847EE26B173640099078A /* Info.plist */,
+				A08847EB26B173640099078A /* Preview Content */,
+			);
+			path = "MiCard SwiftUI";
+			sourceTree = "<group>";
+		};
+		A08847EB26B173640099078A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A08847EC26B173640099078A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A08847F626B173650099078A /* MiCard SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A08847F726B173650099078A /* MiCard_SwiftUITests.swift */,
+				A08847F926B173650099078A /* Info.plist */,
+			);
+			path = "MiCard SwiftUITests";
+			sourceTree = "<group>";
+		};
+		A088480126B173650099078A /* MiCard SwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A088480226B173650099078A /* MiCard_SwiftUIUITests.swift */,
+				A088480426B173650099078A /* Info.plist */,
+			);
+			path = "MiCard SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		A088481026B174DC0099078A /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A088481226B1768F0099078A /* ComicNeue-Regular.ttf */,
+				A088481126B174FD0099078A /* Nunito-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A08847E126B173630099078A /* MiCard SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A088480726B173650099078A /* Build configuration list for PBXNativeTarget "MiCard SwiftUI" */;
+			buildPhases = (
+				A08847DE26B173630099078A /* Sources */,
+				A08847DF26B173630099078A /* Frameworks */,
+				A08847E026B173630099078A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MiCard SwiftUI";
+			productName = "MiCard SwiftUI";
+			productReference = A08847E226B173630099078A /* MiCard SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A08847F226B173640099078A /* MiCard SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A088480A26B173650099078A /* Build configuration list for PBXNativeTarget "MiCard SwiftUITests" */;
+			buildPhases = (
+				A08847EF26B173640099078A /* Sources */,
+				A08847F026B173640099078A /* Frameworks */,
+				A08847F126B173640099078A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A08847F526B173640099078A /* PBXTargetDependency */,
+			);
+			name = "MiCard SwiftUITests";
+			productName = "MiCard SwiftUITests";
+			productReference = A08847F326B173640099078A /* MiCard SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A08847FD26B173650099078A /* MiCard SwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A088480D26B173650099078A /* Build configuration list for PBXNativeTarget "MiCard SwiftUIUITests" */;
+			buildPhases = (
+				A08847FA26B173650099078A /* Sources */,
+				A08847FB26B173650099078A /* Frameworks */,
+				A08847FC26B173650099078A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A088480026B173650099078A /* PBXTargetDependency */,
+			);
+			name = "MiCard SwiftUIUITests";
+			productName = "MiCard SwiftUIUITests";
+			productReference = A08847FE26B173650099078A /* MiCard SwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A08847DA26B173630099078A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A08847E126B173630099078A = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					A08847F226B173640099078A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A08847E126B173630099078A;
+					};
+					A08847FD26B173650099078A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A08847E126B173630099078A;
+					};
+				};
+			};
+			buildConfigurationList = A08847DD26B173630099078A /* Build configuration list for PBXProject "MiCard SwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A08847D926B173630099078A;
+			productRefGroup = A08847E326B173630099078A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A08847E126B173630099078A /* MiCard SwiftUI */,
+				A08847F226B173640099078A /* MiCard SwiftUITests */,
+				A08847FD26B173650099078A /* MiCard SwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A08847E026B173630099078A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08847ED26B173640099078A /* Preview Assets.xcassets in Resources */,
+				A08847EA26B173640099078A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08847F126B173640099078A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08847FC26B173650099078A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A08847DE26B173630099078A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08847E826B173630099078A /* ContentView.swift in Sources */,
+				A08847E626B173630099078A /* MiCard_SwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08847EF26B173640099078A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08847F826B173650099078A /* MiCard_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A08847FA26B173650099078A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A088480326B173650099078A /* MiCard_SwiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A08847F526B173640099078A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A08847E126B173630099078A /* MiCard SwiftUI */;
+			targetProxy = A08847F426B173640099078A /* PBXContainerItemProxy */;
+		};
+		A088480026B173650099078A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A08847E126B173630099078A /* MiCard SwiftUI */;
+			targetProxy = A08847FF26B173650099078A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A088480526B173650099078A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A088480626B173650099078A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A088480826B173650099078A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MiCard SwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MiCard SwiftUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghavTinker.MiCard-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A088480926B173650099078A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MiCard SwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MiCard SwiftUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghavTinker.MiCard-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A088480B26B173650099078A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MiCard SwiftUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghavTinker.MiCard-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiCard SwiftUI.app/MiCard SwiftUI";
+			};
+			name = Debug;
+		};
+		A088480C26B173650099078A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MiCard SwiftUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghavTinker.MiCard-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MiCard SwiftUI.app/MiCard SwiftUI";
+			};
+			name = Release;
+		};
+		A088480E26B173650099078A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MiCard SwiftUIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghavTinker.MiCard-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MiCard SwiftUI";
+			};
+			name = Debug;
+		};
+		A088480F26B173650099078A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MiCard SwiftUIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raghavTinker.MiCard-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MiCard SwiftUI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A08847DD26B173630099078A /* Build configuration list for PBXProject "MiCard SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A088480526B173650099078A /* Debug */,
+				A088480626B173650099078A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A088480726B173650099078A /* Build configuration list for PBXNativeTarget "MiCard SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A088480826B173650099078A /* Debug */,
+				A088480926B173650099078A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A088480A26B173650099078A /* Build configuration list for PBXNativeTarget "MiCard SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A088480B26B173650099078A /* Debug */,
+				A088480C26B173650099078A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A088480D26B173650099078A /* Build configuration list for PBXNativeTarget "MiCard SwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A088480E26B173650099078A /* Debug */,
+				A088480F26B173650099078A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A08847DA26B173630099078A /* Project object */;
+}
