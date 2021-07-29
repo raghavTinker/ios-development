@@ -72,7 +72,6 @@ struct InfoViewImage: View {
                 
                 Text(text).padding()
             })
-            
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
